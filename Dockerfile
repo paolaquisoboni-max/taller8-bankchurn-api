@@ -4,10 +4,10 @@ FROM python:3.10
 RUN adduser --disabled-password --gecos '' api-user
 
 # Definir directorio de trabajo 
-WORKDIR /opt/bankchurn-api
+WORKDIR /app
 
 # Instalar dependencias
-COPY bankchurn-api/ /opt/bankchurn-api/
+COPY . /app
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 
