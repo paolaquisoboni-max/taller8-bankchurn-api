@@ -7,7 +7,7 @@ RUN adduser --disabled-password --gecos '' api-user
 WORKDIR /opt/bankchurn-api
 
 # Instalar dependencias
-ADD . /opt/bankchurn-api/
+ADD ./bankchurn-api /opt/bankchurn-api/
 RUN pip install --upgrade pip
 RUN pip install -r /opt/bankchurn-api/requirements.txt
 
