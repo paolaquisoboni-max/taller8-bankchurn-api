@@ -9,7 +9,7 @@ WORKDIR /opt/bankchurn-api
 # Instalar dependencias
 ADD ./bankchurn-api /opt/bankchurn-api/
 RUN pip install --upgrade pip
-RUN pip install -r /opt/bankchurn-api/requirements.txt
+RUN pip install -r requirements.txt
 
 # Hacer el directorio de trabajo ejecutable 
 RUN chmod +x /opt/bankchurn-api/run.sh
