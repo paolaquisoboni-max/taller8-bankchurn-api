@@ -12,7 +12,7 @@ RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 
 # Hacer el directorio de trabajo ejecutable 
-RUN chmod +x /opt/bankchurn-api/run.sh
+RUN chmod +x run.sh
 # Cambiar propiedad de la carpeta a api-user 
 RUN chown -R api-user:api-user ./
 
